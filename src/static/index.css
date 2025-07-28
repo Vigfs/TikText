@@ -1,0 +1,83 @@
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@400&display=swap");
+
+:root {
+  --azul-tiktok: #69C9D0;
+  --vermelho-tiktok: #EE1D52;
+  --padding-padrao: 16px;
+
+  --texto-base: #FBFAFC;
+  --preto-escala-x500: #000000;
+}
+
+* {
+  font-family: 'Switzer', sans-serif !important;
+}
+
+.stMain {
+  background-color: var(--preto-escala-x500);
+  color: var(--texto-base);
+}
+
+.stAppHeader {
+  visibility: hidden;
+}
+
+.landmark {
+  color: var(--texto-base);
+}
+
+.responsive-svg {
+  max-width: 100%;
+  max-height: 74px;
+  height: auto;
+  width: auto;
+}
+
+.st-emotion-cache-z8vbw2 {
+  margin-left: 0.4rem;
+  color: var(--texto-base);
+}
+
+.st-emotion-cache-z8vbw2:hover {
+  color: var(--texto-base);
+  background-color: var(--preto-escala-x500);
+  border: 1px solid var(--texto-base);
+}
+
+.st-emotion-cache-z8vbw2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.8rem;
+  height: 100%;
+  border-top: 2px solid var(--azul-tiktok);
+  border-left: 2px solid var(--azul-tiktok);
+  border-bottom: 2px solid var(--azul-tiktok);
+  border-radius: 8px 0 0 8px;
+  box-sizing: border-box;
+  background-color: var(--azul-tiktok);
+}
+
+.st-emotion-cache-z8vbw2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4.4rem;
+  width: 0.8rem;
+  height: 100%;
+  border-top: 2px solid var(--vermelho-tiktok);
+  border-right: 2px solid var(--vermelho-tiktok);
+  border-bottom: 2px solid var(--vermelho-tiktok);
+  border-radius: 0 8px 8px 0;
+  box-sizing: border-box;
+  background-color: var(--vermelho-tiktok);
+}
+
+#text_input_1:focus {
+  position: absolute;
+  margin-left: -1px;
+  margin-top: -2px;
+  border: 2px solid var(--azul-tiktok);
+  border-radius: 8px 8px 8px 8px;
+}
