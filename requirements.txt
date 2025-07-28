@@ -1,0 +1,4 @@
+PyYAML==6.0.2
+yt-dlp==2025.6.30
+openai-whisper==20250625
+streamlit==1.47.0
