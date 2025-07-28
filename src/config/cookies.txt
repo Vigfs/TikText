@@ -1,0 +1,16 @@
+# Arquivo `cookies.txt` para yt-dlp
+
+💠 Finalidade
+Este arquivo armazena cookies de navegação que permitem ao yt-dlp acessar os vídeos do TikTok.
+
+💠 Avisos Importantes
+- NUNCA compartilhe seu `cookies.txt` real (ele contém dados sensíveis de sessão).
+- Este arquivo é apenas um modelo de exemplo (substitua pelos seus cookies quando for usar).
+
+💠 Como Gerar Seu Próprio `cookies.txt`
+
+Método Recomendado (Chrome/Edge/Brave)
+1. Instale a extensão: Get cookies.txt LOCALLY (https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc).
+2. Acesse o TikTok e faça login.
+3. Clique no ícone da extensão > Copy.
+4. Cole dentro deste arquivo.

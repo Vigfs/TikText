@@ -1,0 +1,6 @@
+cookiefile: ./src/config/cookies.txt
+format: bestaudio/best
+outtmpl: ./src/static/temp/audio.%(ext)s
+postprocessors:
+  - key: FFmpegExtractAudio
+    preferredcodec: opus
