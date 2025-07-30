@@ -9,7 +9,7 @@ Repositório desenvolvido para apresentar o projeto TikText, uma aplicação con
 [![Link Portfólio](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://kauan.dev.br/) 
 [![Link Portfólio](https://img.shields.io/badge/Acesse%20meu%20Portf%C3%B3lio%20Completo%20-CCCCCC?style=for-the-badge)](https://kauan.dev.br/)
 
-<img width="100%" src="./readme-images/banner.png">
+![banner](https://raw.githubusercontent.com/kaurodri/kaurodri/refs/heads/main/readme-images/TikText/banner.png)
 
 ## Sumário
 
