@@ -4,6 +4,7 @@ import requests
 import time
 from utils.media_extractor import media_extractor
 from utils.transcrever import rodar_script
+from utils.validar_link import validar
 
 def read_css():
     with open("./src/static/index.css") as f:
@@ -58,25 +59,29 @@ def main():
                 st.warning("Por favor, insira um link válido.")
             else:
                 try:
-                    url = link #fazer as validações aqui
                     
-                    with st.spinner("Iniciando o processo..."):
-                        resposta = media_extractor(url)
-                        st.write("Capturando o áudio do vídeo...")
-                        time.sleep(3)
-                        st.write("Transcrevendo o áudio...")
-                        time.sleep(3)
-                        resposta_texto = rodar_script()
-                        st.write("Formatando resposta...")
-                        time.sleep(3)
+                    if validar(link) == 200:
+                        url = link
+                    
+                    
+                        with st.spinner("Iniciando o processo..."):
+                            resposta = media_extractor(url)
+                            st.write("Capturando o áudio do vídeo...")
+                            time.sleep(3)
+                            st.write("Transcrevendo o áudio...")
+                            time.sleep(3)
+                            resposta_texto = rodar_script()
+                            st.write("Formatando resposta...")
+                            time.sleep(3)
 
-                    if resposta == 200:
-                        st.success("Transcrição realizada com sucesso!")
-                        st.markdown(f"### 📃 Transcrição Completa")
-                        st.markdown(resposta_texto)
+                        if resposta == 200:
+                            st.success("Transcrição realizada com sucesso!")
+                            st.markdown(f"### 📃 Transcrição Completa")
+                            st.markdown(resposta_texto)
+                        else:
+                            st.error(f"Erro ao enviar")
                     else:
-                        st.error(f"Erro ao enviar")
-
+                        st.error(f"Link inválido")
                 except requests.exceptions.RequestException as e:
                     st.error(f"Erro de conexão: {str(e)}")
                 except Exception as e:
